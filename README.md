@@ -34,4 +34,5 @@ Tiene la estructura de los contenedores `API` y `DB`
 ### ETL
 - Es necesario crear un entorno de desarrollo con python.
 - Ejecutarlo con `source env/bin/activate`.
-
+- Instalar las librerias necesarias con `pip install -r requirements.txt`.
+- Ejecutar `script.py`.
