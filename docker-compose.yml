@@ -14,11 +14,12 @@ services:
 
   api:
     build: ./api
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
     container_name: kitsune_api
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://user:password@db:5432/proyectos
+      DATABASE_URL: postgresql://user:password@db:5432/proyectos
     ports:
       - "8000:8000"
     volumes:
