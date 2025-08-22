@@ -1,0 +1,8 @@
+# Entorno virtual de python
+*VM
+
+# Archivos propios de pyton
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
