@@ -41,15 +41,16 @@ Tiene la estructura de los contenedores `API` y `DB`
 - Ejecutar `docker compose up --build` si es la priemera vez.
 - Ejecutar `docker compose up` si ya existe el contenedor.
 
-### WEB
-- Ejecutar `npm install` si es la primera vez.
-- Ejecutar `npm run dev`, si ya se ejecuto `npm install`.
-
 ### ETL
 - Es necesario crear un entorno de desarrollo con python `python3 -m venv env`.
 - Ejecutarlo con `source env/bin/activate`.
 - Instalar las librerias necesarias con `pip install -r requirements.txt`.
 - Ejecutar `script.py` con `python script.py` dento de la carpeta `etl`
+
+### WEB
+- Ejecutar `npm install` si es la primera vez.
+- Ejecutar `npm run dev`, si ya se ejecuto `npm install`.
+
 
 # API
 A travez de `http://127.0.0.1:8001/docs` o `http://127.0.0.1:8001/redoc`, se puede ver la funcionalidad de los endpoints e incluso porbarlos sin la necesidad de postman.
