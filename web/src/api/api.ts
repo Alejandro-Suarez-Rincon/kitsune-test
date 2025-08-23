@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8001"; // tu backend FastAPI
+const API_URL = "http://localhost:8001";
 
 export async function getPrisioneros() {
   const res = await fetch(`${API_URL}/prisioneros/`, { cache: "no-store" });
