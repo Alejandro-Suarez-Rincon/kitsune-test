@@ -2,10 +2,23 @@ from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 import models, schemas, crud
 from database import engine, SessionLocal
+from fastapi.middleware.cors import CORSMiddleware
 
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="API de Prisioneros")
+
+origins = [
+    "http://localhost:3000"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Dependencia para conexión con la BD
 def get_db():
