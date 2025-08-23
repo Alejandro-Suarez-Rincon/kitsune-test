@@ -5,10 +5,11 @@
 - [Guia de Inicio Rapido](#guia-de-inicio-rapido)
 - [API](#API)
 - [WEB](#WEB)
+- [Uso de IA](#Uso-de-IA)
 
 ---
 
-## Orden de Carpetas
+# Orden de Carpetas
 ```
 .
 ├── api
@@ -35,7 +36,7 @@ Se agregan las capturas pertenecientes a la documentacion.
 Tiene la estructura de los contenedores `API` y `DB`
 
 
-## Guia de Inicio Rapido
+# Guia de Inicio Rapido
 ### API y DB
 - Ejecutar `docker compose up --build` si es la priemera vez.
 - Ejecutar `docker compose up` si ya existe el contenedor.
@@ -50,7 +51,7 @@ Tiene la estructura de los contenedores `API` y `DB`
 - Instalar las librerias necesarias con `pip install -r requirements.txt`.
 - Ejecutar `script.py`.
 
-## API
+# API
 A travez de `http://127.0.0.1:8001/docs` o `http://127.0.0.1:8001/redoc`, se puede ver la funcionalidad de los endpoints e incluso porbarlos sin la necesidad de postman.
 
 ### Endpoints
@@ -59,7 +60,7 @@ A travez de `http://127.0.0.1:8001/docs` o `http://127.0.0.1:8001/redoc`, se pue
 - `/prisioneros/fecha/{fecha}` -> Filtrar por fecha
 - `/prisioneros/buscar/{palabra}` -> Filtar por palabra (delito cometido)
 
-## WEB
+# WEB
 Con next.js, un framework de react, se crea el front end, necesario que consume el `API` de `Fast API`.
 
 ### Intefaz
@@ -76,3 +77,14 @@ Al ver detalle del prisionero se obtiene
 2. Boton de regresar, para volver a la tabla de prisionero.
 
 ![detalle](img_doc/detalle.png)
+
+# Uso de IA
+Se utilizó IA para el desarrollo de esta prueba, diagnostica como una herramienta para optimizar tiempos, de la siguiente forma.
+
+1. Dokerizacion: Al usar IA, para generar la dockerizacion principal y evitar errores, con ello ser mas productivo e invertir tiempo en los otros puntos de la prueba.
+
+2. Correccion de Errores: al implementar el ORM de `sqlalchemy`, se genero una serie de errores, que no permitia la coneccion de la tabla creada con el api. Con la IA se corrigio.
+
+3. Preguntas de Implementacion: Se le pregunta a la IA como actuar en siertos eventos donde no existe una buena claridad para desarrollar un problema. Tal caso como el entendimiento de las nuevas versiones de `Next.js` y de `tailwindcss`.
+
+4. Ayuda con la coneccion sencilla del `API` desde `NEXT.JS`.
