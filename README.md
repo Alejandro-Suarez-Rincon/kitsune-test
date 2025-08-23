@@ -46,10 +46,10 @@ Tiene la estructura de los contenedores `API` y `DB`
 - Ejecutar `npm run dev`, si ya se ejecuto `npm install`.
 
 ### ETL
-- Es necesario crear un entorno de desarrollo con python.
+- Es necesario crear un entorno de desarrollo con python `python3 -m venv env`.
 - Ejecutarlo con `source env/bin/activate`.
 - Instalar las librerias necesarias con `pip install -r requirements.txt`.
-- Ejecutar `script.py`.
+- Ejecutar `script.py` con `python script.py` dento de la carpeta `etl`
 
 # API
 A travez de `http://127.0.0.1:8001/docs` o `http://127.0.0.1:8001/redoc`, se puede ver la funcionalidad de los endpoints e incluso porbarlos sin la necesidad de postman.
