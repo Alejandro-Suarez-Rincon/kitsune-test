@@ -20,7 +20,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Dependencia para conexión con la BD
 def get_db():
     db = SessionLocal()
     try:
