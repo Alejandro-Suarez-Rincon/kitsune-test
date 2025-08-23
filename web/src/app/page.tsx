@@ -34,7 +34,7 @@ export default function Home() {
           onChange={(e) => setSearch(e.target.value)}
           className="border p-2 flex-1"
         />
-        <button className="bg-blue-600 text-white px-4 py-2 rounded">
+        <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-900">
           Buscar
         </button>
       </form>

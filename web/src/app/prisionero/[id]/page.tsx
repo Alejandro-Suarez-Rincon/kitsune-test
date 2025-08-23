@@ -48,7 +48,7 @@ export default function PrisioneroDetalle() {
         <li><strong>Ubicación:</strong> ({prisionero.latitud}, {prisionero.longitud})</li>
       </ul>
       <button
-        className="mt-4 bg-gray-600 text-white px-4 py-2 rounded"
+        className="mt-4 bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-800"
         onClick={() => router.back()}
       >
         Volver
