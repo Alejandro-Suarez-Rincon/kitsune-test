@@ -1,0 +1,11 @@
+# Entorno virtual de python
+*env
+
+# Archivos propios de pyton
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de pc
+*.DS_Store
