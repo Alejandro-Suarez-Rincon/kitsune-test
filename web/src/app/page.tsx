@@ -29,7 +29,7 @@ export default function Home() {
       <form onSubmit={handleSearch} className="mb-4 flex gap-2">
         <input
           type="text"
-          placeholder="Buscar por palabra clave..."
+          placeholder="Buscar por palabra clave (DELITO)"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="border p-2 flex-1"
