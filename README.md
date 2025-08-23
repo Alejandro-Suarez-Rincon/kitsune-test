@@ -37,7 +37,7 @@ Tiene la estructura de los contenedores `API` y `DB`
 - Ejecutar `script.py`.
 
 ## API
-A travez de `http://127.0.0.1:8000/docs` o `http://127.0.0.1:8000/redoc`, se puede ver la funcionalidad de los endpoints e incluso porbarlos sin la necesidad de postman.
+A travez de `http://127.0.0.1:8001/docs` o `http://127.0.0.1:8001/redoc`, se puede ver la funcionalidad de los endpoints e incluso porbarlos sin la necesidad de postman.
 
 ### Endpoints
 - `/prisioneros/` -> Listar
